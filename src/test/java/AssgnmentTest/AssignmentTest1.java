@@ -12,9 +12,9 @@ public class AssignmentTest1 extends assignment1 {
 		launchBrowser();
     }
 @Test(priority = 1)
-public void logIN() throws InterruptedException
+public void ProductSearch() throws InterruptedException
 {
-	login();
+	searchproduct();
 	}
 @AfterMethod
 public void closeBrowser()
