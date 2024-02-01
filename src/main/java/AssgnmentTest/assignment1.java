@@ -43,7 +43,7 @@ public void launchBrowser()
       public void login() throws InterruptedException {
 
           driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-          driver.findElement(By.linkText("Log In")).click();
+          //driver.findElement(By.linkText("Log In")).click();
           Thread.sleep(4000);
         //  WebElement email = driver.findElement(By.xpath("(//input[@aria-label='Email'])[1]"));
         //  WebElement password =driver.findElement(By.xpath("//input[@aria-label='Password']"));
