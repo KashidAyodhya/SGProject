@@ -24,16 +24,19 @@ public void launchBrowser()
        
          driver = new EdgeDriver(options);
 
-         driver.get("https://www.flipkart.com/");
+        driver.get("https://www.amazon.in/");
          driver.manage().window().maximize();
 
        public void searchproduct() throws InterruptedException {
+	       
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-          driver.findElement(By.xpath("//input[@name='q']")).sendKeys("iphone"+ Keys.ENTER);
-          Thread.sleep(4000);
+		WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
 
-          System.out.println(driver.getTitle());
+		searchBox.sendKeys("laptop", Keys.RETURN);
+
+		System.out.println(driver.getTitle());
+		
            }
 
       public void closingBrowser()
