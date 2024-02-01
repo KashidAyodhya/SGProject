@@ -31,8 +31,8 @@ public void launchBrowser()
       
          WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
          try {
-             wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@aria-label='Close Modal']")));
-             driver.findElement(By.xpath("//button[@aria-label='Close Modal']")).click();
+           //  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@aria-label='Close Modal']")));
+            // driver.findElement(By.xpath("//button[@aria-label='Close Modal']")).click();
 
          } catch (Exception e) {
              e.printStackTrace();
@@ -45,9 +45,9 @@ public void launchBrowser()
           driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
           driver.findElement(By.linkText("Log In")).click();
           Thread.sleep(4000);
-          WebElement email = driver.findElement(By.xpath("(//input[@aria-label='Email'])[1]"));
-          WebElement password =driver.findElement(By.xpath("//input[@aria-label='Password']"));
-          WebElement login = driver.findElement(By.xpath("(//button[text()='Log In'])"));
+        //  WebElement email = driver.findElement(By.xpath("(//input[@aria-label='Email'])[1]"));
+        //  WebElement password =driver.findElement(By.xpath("//input[@aria-label='Password']"));
+          //WebElement login = driver.findElement(By.xpath("(//button[text()='Log In'])"));
 
         //  email.sendKeys("Ayodhya1234567@gmail.com");
          // password.sendKeys("Password123");
