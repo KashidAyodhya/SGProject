@@ -49,15 +49,16 @@ public void launchBrowser()
           WebElement password =driver.findElement(By.xpath("//input[@aria-label='Password']"));
           WebElement login = driver.findElement(By.xpath("(//button[text()='Log In'])"));
 
-          email.sendKeys("Ayodhya1234567@gmail.com");
-          password.sendKeys("Password123");
-          login.click();
+        //  email.sendKeys("Ayodhya1234567@gmail.com");
+         // password.sendKeys("Password123");
+        //  login.click();
           Thread.sleep(4000);
 
           System.out.println("Succesfully logged in.");
           
-         String headline=driver.findElement(By.xpath("//h3[@class='strip__headline lsco-col-xs-21 lsco-col-md-17'][1]")).getText();
-         System.out.println(headline);}
+        // String headline=driver.findElement(By.xpath("//h3[@class='strip__headline lsco-col-xs-21 lsco-col-md-17'][1]")).getText();
+        // System.out.println(headline);
+      }
 
       public void closingBrowser()
       {
