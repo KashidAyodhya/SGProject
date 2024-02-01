@@ -2,12 +2,11 @@ package AssgnmentTest;
 
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 
 public class assignment1 {
 
@@ -27,17 +26,22 @@ public void launchBrowser()
         driver.get("https://www.amazon.in/");
          driver.manage().window().maximize();
 
+
+     
+     }
+    
        public void searchproduct() throws InterruptedException {
 	       
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
+          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+          driver.findElement(By.xpath("//input[@name='q']")).sendKeys("iphone"+ Keys.ENTER);
+          Thread.sleep(4000);
 
-		searchBox.sendKeys("laptop", Keys.RETURN);
+          System.out.println(driver.getTitle());
 
-		System.out.println(driver.getTitle());
-		
-           }
+          }
+
 
       public void closingBrowser()
       {
