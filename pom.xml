@@ -48,7 +48,7 @@
 <version>3.0.0-M7</version>
 <configuration>
 <includes>
-<include>AssignmentTest1.java</include>				
+<include>**/AssignmentTest1.java</include>				
 </includes>	
 </configuration>
 </plugin>
