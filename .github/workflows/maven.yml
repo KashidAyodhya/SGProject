@@ -9,7 +9,9 @@
 name: Java CI with Maven
 
 on:
- workflow_dispatch:
+ push:
+  branches: [ "master" ]
+# workflow_dispatch:
 
 jobs:
   build:
