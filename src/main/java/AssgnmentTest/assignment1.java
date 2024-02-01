@@ -34,7 +34,7 @@ public void launchBrowser()
           Thread.sleep(4000);
 
           System.out.println(driver.getTitle());
-          }
+           }
 
       public void closingBrowser()
       {
