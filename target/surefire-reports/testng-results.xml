@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-01T10:47:25 IST" name="Surefire suite" finished-at="2024-02-01T10:48:02 IST" duration-ms="36764">
+    <groups>
+    </groups>
+    <test started-at="2024-02-01T10:47:25 IST" name="Surefire test" finished-at="2024-02-01T10:48:02 IST" duration-ms="36764">
+      <class name="AssgnmentTest.AssignmentTest1">
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:AssgnmentTest.AssignmentTest1@2dde1bff]" started-at="2024-02-01T10:47:25 IST" name="browserLaunch" finished-at="2024-02-01T10:47:48 IST" duration-ms="22783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="logIN()[pri:1, instance:AssgnmentTest.AssignmentTest1@2dde1bff]" started-at="2024-02-01T10:47:48 IST" name="logIN" finished-at="2024-02-01T10:48:01 IST" duration-ms="12712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIN -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AssgnmentTest.AssignmentTest1@2dde1bff]" started-at="2024-02-01T10:48:01 IST" name="closeBrowser" finished-at="2024-02-01T10:48:02 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- AssgnmentTest.AssignmentTest1 -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
